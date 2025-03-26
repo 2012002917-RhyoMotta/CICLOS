@@ -9,6 +9,7 @@ namespace G1_24_Marzo_17_Rhyo_Motta
 
         private void button1_Click(object sender, EventArgs e)
         {
+            dataGridView1.Rows.Clear();
             int num1 = int.Parse(textBox1.Text);
 
             for (int cont = 1; cont < 11; cont++)
@@ -16,7 +17,6 @@ namespace G1_24_Marzo_17_Rhyo_Motta
                 int multi;
                 multi = num1 * cont;
 
-                //Agregar los Datos en el DataGribView
                 dataGridView1.Rows.Add(num1, cont, multi);
             }
         }
@@ -25,6 +25,7 @@ namespace G1_24_Marzo_17_Rhyo_Motta
         {
             Ejer ejer = new Ejer();
             ejer.ShowDialog();
+            this.Close();
         }
     }
 }

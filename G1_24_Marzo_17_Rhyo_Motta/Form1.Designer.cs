@@ -36,6 +36,7 @@
             Multi = new DataGridViewTextBoxColumn();
             Total = new DataGridViewTextBoxColumn();
             button2 = new Button();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -69,6 +70,7 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Numeros, Multi, Total });
+            dataGridView1.Enabled = false;
             dataGridView1.Location = new Point(12, 35);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(341, 242);
@@ -99,11 +101,21 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 280);
+            label2.Name = "label2";
+            label2.Size = new Size(174, 15);
+            label2.TabIndex = 5;
+            label2.Text = "Rhyo Donato Motta Pérez VB 17";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(364, 290);
+            ClientSize = new Size(364, 301);
+            Controls.Add(label2);
             Controls.Add(button2);
             Controls.Add(dataGridView1);
             Controls.Add(textBox1);
@@ -127,5 +139,6 @@
         private DataGridViewTextBoxColumn Multi;
         private DataGridViewTextBoxColumn Total;
         private Button button2;
+        private Label label2;
     }
 }

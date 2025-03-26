@@ -19,6 +19,7 @@ namespace G1_24_Marzo_17_Rhyo_Motta
 
         private void button1_Click(object sender, EventArgs e)
         {
+            dataGridView1.Rows.Clear();
             int cont2 = 1;
             int num2 = int.Parse(textBox1.Text);
 
@@ -27,7 +28,6 @@ namespace G1_24_Marzo_17_Rhyo_Motta
                 int multi;
                 multi = num2 * cont2;
 
-                //Agregar los Datos en el DataGribView
                 dataGridView1.Rows.Add(num2, cont2, multi);
                 cont2++;
             } while (cont2 < 11);
@@ -38,6 +38,7 @@ namespace G1_24_Marzo_17_Rhyo_Motta
         {
             SecEjer ejer = new SecEjer();
             ejer.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -36,6 +36,7 @@
             textBox1 = new TextBox();
             button1 = new Button();
             label1 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -53,6 +54,7 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Numeros, Multi, Total });
+            dataGridView1.Enabled = false;
             dataGridView1.Location = new Point(12, 41);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(341, 242);
@@ -99,11 +101,21 @@
             label1.TabIndex = 10;
             label1.Text = "Digite un valor:";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 286);
+            label2.Name = "label2";
+            label2.Size = new Size(174, 15);
+            label2.TabIndex = 15;
+            label2.Text = "Rhyo Donato Motta Pérez VB 17";
+            // 
             // Ejer2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(364, 290);
+            ClientSize = new Size(364, 307);
+            Controls.Add(label2);
             Controls.Add(button2);
             Controls.Add(dataGridView1);
             Controls.Add(textBox1);
@@ -127,5 +139,6 @@
         private TextBox textBox1;
         private Button button1;
         private Label label1;
+        private Label label2;
     }
 }
