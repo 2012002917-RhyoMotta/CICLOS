@@ -22,12 +22,10 @@ namespace G1_24_Marzo_17_Rhyo_Motta
             dataGridView1.Rows.Clear();
             int cont2 = 1;
             int num2 = int.Parse(textBox1.Text);
-
             do
             {
                 int multi;
                 multi = num2 * cont2;
-
                 dataGridView1.Rows.Add(num2, cont2, multi);
                 cont2++;
             } while (cont2 < 11);

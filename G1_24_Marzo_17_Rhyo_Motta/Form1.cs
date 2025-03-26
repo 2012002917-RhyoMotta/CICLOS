@@ -11,12 +11,10 @@ namespace G1_24_Marzo_17_Rhyo_Motta
         {
             dataGridView1.Rows.Clear();
             int num1 = int.Parse(textBox1.Text);
-
             for (int cont = 1; cont < 11; cont++)
             {
                 int multi;
                 multi = num1 * cont;
-
                 dataGridView1.Rows.Add(num1, cont, multi);
             }
         }

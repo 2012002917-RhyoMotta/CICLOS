@@ -57,7 +57,7 @@
             dataGridView1.Enabled = false;
             dataGridView1.Location = new Point(12, 41);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(341, 242);
+            dataGridView1.Size = new Size(341, 291);
             dataGridView1.TabIndex = 8;
             // 
             // Numeros
@@ -104,7 +104,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 286);
+            label2.Location = new Point(12, 338);
             label2.Name = "label2";
             label2.Size = new Size(174, 15);
             label2.TabIndex = 10;
@@ -114,7 +114,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(364, 305);
+            ClientSize = new Size(364, 361);
             Controls.Add(label2);
             Controls.Add(button2);
             Controls.Add(dataGridView1);

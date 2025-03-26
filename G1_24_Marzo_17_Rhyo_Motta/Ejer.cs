@@ -27,7 +27,6 @@ namespace G1_24_Marzo_17_Rhyo_Motta
             {
                 int multi;
                 multi = num2 * cont2;
-
                 dataGridView1.Rows.Add(num2, cont2, multi);
                 cont2++;
             }
