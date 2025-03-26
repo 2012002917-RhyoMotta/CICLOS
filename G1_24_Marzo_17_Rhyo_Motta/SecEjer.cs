@@ -46,7 +46,7 @@ namespace G1_24_Marzo_17_Rhyo_Motta
                 }
             }
         }
-
+        //cambios
         private int[,] suma;
         private void button3_Click(object sender, EventArgs e)
         {
